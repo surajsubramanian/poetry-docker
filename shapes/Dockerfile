@@ -11,7 +11,4 @@ COPY poetry.lock pyproject.toml ./
 
 RUN poetry check
 RUN poetry install --no-interaction --no-cache --no-root --without dev
-COPY shapes_service shapes_service
-
-EXPOSE 8093
-CMD ["poetry", "run", "python", "-m", "shapes_service"]
+COPY shapes shapes

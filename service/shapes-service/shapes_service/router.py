@@ -7,6 +7,7 @@ router = APIRouter()
 async def fnarea(n: int):
     try:
         x = area(n)
+        # x = n * n
         return str(x)
     except Exception as e:
         raise HTTPException(

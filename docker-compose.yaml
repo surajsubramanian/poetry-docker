@@ -8,4 +8,9 @@ services:
     ports:
       - "8093:8093"
     volumes:
-      - ./shapes:../../shapes
+      - ./shapes:/app/shapes
+  # shapes:
+  #   build:
+  #     context: shapes
+  #     dockerfile: Dockerfile
+  #   platform: linux/x86_64
