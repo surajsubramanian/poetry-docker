@@ -8,7 +8,7 @@ router = APIRouter()
 async def fnarea(n: int):
     try:
         print(os.getcwd())
-        x = area(n) * n
+        x = area(n) * n * 10
         # x = n * n
         return str(x)
     except Exception as e:
